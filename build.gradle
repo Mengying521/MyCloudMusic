@@ -25,3 +25,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+//扩展配置，相当于定义常量，在gradle文件中引用
+ext {
+    minSdkVersion = 25
+
+}

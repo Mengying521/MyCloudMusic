@@ -1,14 +1,21 @@
+//应用安卓插件
 apply plugin: 'com.android.application'
 
 android {
+    //编译版本
     compileSdkVersion 29
+    //编译工具版本
     buildToolsVersion "29.0.2"
     defaultConfig {
+        //应用唯一标识符
         applicationId "com.wmy.learning.mycloudmusic"
-        minSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion 29
+        //版本号
         versionCode 1
+        //版本名称
         versionName "1.0"
+        //测试相关
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
