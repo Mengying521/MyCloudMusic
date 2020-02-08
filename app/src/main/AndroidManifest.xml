@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".activity.LoginOrRegisterActivity"></activity>
         <!-- 启动界面 -->
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
@@ -16,10 +17,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- end启动界面 -->
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".activity.GuideActivity"></activity>
+        </activity> <!-- end启动界面 -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.GuideActivity" />
     </application>
 
 </manifest>

@@ -53,8 +53,12 @@ public class SplashActivity extends BaseCommonActivity {
 
     private void next() {
         startActivityAfterFinishThis(GuideActivity.class);
+       /* if (sp.isShowGuide()) {
+            startActivityAfterFinishThis(GuideActivity.class);
+        } else {
+            startActivityAfterFinishThis(LoginOrRegisterActivity.class);
+        }*/
 
     }
-
 
 }

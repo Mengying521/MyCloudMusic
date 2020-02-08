@@ -5,7 +5,17 @@ import android.os.Build;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.wmy.learning.mycloudmusic.utils.PreferenceUtil;
+
 public class BaseCommonActivity extends BaseActivity {
+
+    protected PreferenceUtil sp;
+
+    @Override
+    protected void initDatum() {
+        super.initDatum();
+        sp = PreferenceUtil.getInstance(getApplicationContext());
+    }
 
     protected void fullScreen() {
         View decorView = getWindow().getDecorView();
